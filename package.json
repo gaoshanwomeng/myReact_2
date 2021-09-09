@@ -1,0 +1,30 @@
+{
+  "name": "my-react",
+  "version": "1.0.0",
+  "description": "手写 React 源码分为以下几个部分：",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuetTusi/my-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuetTusi/my-react/issues"
+  },
+  "homepage": "https://github.com/YuetTusi/my-react#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "jquery": "^3.6.0",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
+  }
+}
