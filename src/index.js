@@ -46,7 +46,7 @@ class Counter extends React.Component {
     return (
       <div>
         <h1 id='title'>hello, react</h1>
-        <button onClick={this.changeName}>哈哈哈</button>
+        <button onclick={this.changeName}>哈哈哈</button>
         <h2>{name}</h2>
         <SubComponent/>
       </div>
@@ -54,6 +54,28 @@ class Counter extends React.Component {
   }
 }
 
-console.log(<Counter/>);
+let jsxEle = <div>
+  <h1 id='title'>
+    hello, react
+    <span>subhello</span>
+  </h1>
+  <button>哈哈哈</button>
+  <h2>hhhh</h2>
+</div>
+
+function FuncCom(){
+  return (
+  <div>
+    <h1 id='title'>
+      hello, react
+      <span>subhello</span>
+    </h1>
+    <button>哈哈哈</button>
+    <h2>hhhh</h2>
+  </div>
+  )
+}
+
+console.log(<FuncCom/>, <Counter/>)
 
 ReactDOM.render(<Counter/>, document.getElementById("root"));
